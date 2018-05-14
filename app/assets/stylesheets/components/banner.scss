@@ -1,0 +1,45 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.btn-clear {
+  background: none;
+  padding: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+
+}
+
+.btn-clear:hover {
+  padding: 17px;
+  color: white;
+  box-shadow: 1px 1px 1px darkgray;
+  text-decoration: none;
+  font-weight: lighter;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}

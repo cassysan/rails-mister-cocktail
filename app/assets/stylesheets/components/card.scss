@@ -1,0 +1,79 @@
+large-card {
+  border: 1px dotted black;
+}
+
+.large-card-description {
+  justify-content: center;
+}
+#card-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #372D30;
+}
+
+.drink-title {
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  color: #372D30;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+.large-card-ingredients p {
+  color:#372D30;;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  align-self: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.image-large-card {
+  box-shadow: 2px 1px 1px 0px #372D30;
+}
+
+.card-image {
+  box-shadow: 2px 1px 1px 1px #372D30;
+}
+
+.card-drink-name {
+  text-decoration: none;
+  color: #372D30;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  min-width: 150px;
+  margin-top: 5px;
+}
+
+.card-drink-name:hover {
+  text-decoration: none;
+}
+
+.drink-card {
+  padding: 5px;
+  box-shadow: 1px 1px 1px darkgray;
+  margin: 10px;
+}
+
+.drink-card:hover {
+  box-shadow: 2px 2px 2px darkgray;
+  margin: 7px;
+  text-decoration: none;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+

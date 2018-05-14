@@ -1,0 +1,5 @@
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name, label: false, placeholder: "Name Your Cocktail" %>
+  <%= f.input :url, label: false, placeholder: "Put a photo url here" %>
+  <%= f.submit "Add a Drank", class: "btn-clear" %>
+<% end %>

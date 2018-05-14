@@ -1,0 +1,23 @@
+<div class="wrapper large-card">
+    <div class="container">
+      <div class="larg-card">
+      <div class="row drink-title "><h1 id="card-title"><%= @cocktail.name %></h1></div>
+      <div class="row large-card-description">
+        <div class="column image-large-card">
+          <%= image_tag @cocktail.url, height: 500 %>
+        </div>
+        <div class="large-card-ingredients">
+          <% @doses.each do |dose| %>
+          <ul>
+            <li class="large-card-ingredients"><p><%= dose.ingredient.name %>: <%= dose.description %></p>  </li>
+          </ul>
+          <% end %>
+          <ul>
+            <li class="large-card-ingredients"><p><%= link_to "Add an Ingredient", new_cocktail_dose_path(@cocktail), class: "btn-clear" %></p>  </li>
+          </ul>
+        </div></div></div>
+    </div>
+    <hr>
+    <%= link_to "Back to All Drinks", cocktails_path, class: "btn-clear" %>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="banner" style="background-image: /*linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%),*/ url(<%= image_path 'mybar.jpg' %>);">
+  <div class="banner-content">
+    <h1 >My Bar</h1>
+    <p>Create Amazing Cocktails</p>
+    <%= link_to "Add A Cocktail", new_cocktail_path, class: "btn-clear" %>
+  </div>
+</div>
+<div class="container">
+  <div class="row"><h1 class="title-main">All Cocktails</h1></div>
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail_path(cocktail), class: "drink-card" do %>
+    <div class="col-xs-12 col-sm-3">
+        <div class="card-image"><%= image_tag cocktail.url, width: 200, height: 300 %></div>
+        <div class="card-drink-row"><h2 class="card-drink-name"><%= cocktail.name %></h2></div>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>
+
