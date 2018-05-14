@@ -41,6 +41,8 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
+gem 'rest-client'
+gem 'awesome_print'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
