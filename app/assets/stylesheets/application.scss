@@ -1,7 +1,4 @@
-@import url("components/banner.scss");
-@import url("components/card.scss");
-@import url("components/index.scss");
-@import url("components/form.scss");
-@import url("components/modal.scss");
+@import "config/fonts";
 
-@import url("config/fonts.scss");
+@import 'components/index';
+@import 'pages/index';
