@@ -1,5 +1,6 @@
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name, label: false, placeholder: "Name Your Cocktail" %>
-  <%= f.input :url, label: false, placeholder: "Put a photo url here" %>
-  <%= f.submit "Add a Drank", class: "btn-clear" %>
+    <%= f.input :photo, label: false %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.submit "Add a Cocktail", class: "btn-clear" %>
 <% end %>
