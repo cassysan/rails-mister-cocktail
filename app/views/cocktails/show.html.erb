@@ -9,11 +9,15 @@
         <div class="large-card-ingredients">
           <% @doses.each do |dose| %>
           <ul>
-            <li class="large-card-ingredients"><p><%= dose.ingredient.name %>: <%= dose.description %></p>  </li>
+            <li class="large-card-ingredients">
+              <p><%= dose.ingredient.name %>: <%= dose.description %> <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
+                <i class="fas fa-trash"></i>
+                  <% end %></p>  </li>
           </ul>
           <% end %>
           <ul>
-            <li class="large-card-ingredients"><p><%= link_to "Add an Ingredient", new_cocktail_dose_path(@cocktail), class: "btn-clear" %></p>  </li>
+            <%= render 'doses/form', cocktail: @cocktail, dose: @dose, ingredients: @ingredients %>
+
           </ul>
         </div></div></div>
     </div>

@@ -14,3 +14,21 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+const modal = document.getElementById('myModal');
+const trigger = document.getElementById('add-cocktail');
+const span = document.getElementsByClassName("close")[0];
+
+
+trigger.onclick = function() {
+    modal.style.display = "block";
+
+
+function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+trigger.addEventListener("click", toggleModal);
+span.addEventListener("click", toggleModal);
+
+

@@ -43,6 +43,10 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 gem 'rest-client'
 gem 'awesome_print'
+gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
