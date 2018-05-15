@@ -1,7 +1,3 @@
-.large-card {
-  border: 1px dotted black;
-}
-
 .large-card-description {
   justify-content: center;
 }
@@ -39,16 +35,18 @@ ul {
 
 .card {
   background-size: cover;
-  box-shadow: 2px 1px 1px 1px #372D30;
+  box-shadow: 2px 1px 1px 1px darkgray;
   width: 200px;
   height: 300px;
   background-repeat:no-repeat;
+  padding: 5px;
+  margin: 10px;
 }
 
 .card-drink-name {
   text-decoration: none;
   color: #372D30;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   text-align: center;
@@ -60,14 +58,8 @@ ul {
   text-decoration: none;
 }
 
-.drink-card {
-  padding: 5px;
-  box-shadow: 1px 1px 1px darkgray;
-  margin: 10px;
-}
-
 .card:hover {
-  box-shadow: 2px 2px 2px darkgray;
+  box-shadow: 1px 1px 1px darkgray;
   margin: 7px;
   text-decoration: none;
   text-shadow: 1px 1px rgb(255, 255, 255);

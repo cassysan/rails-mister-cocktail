@@ -1,0 +1,30 @@
+.title-main {
+  color: #372D30;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin: 40px;
+}
+
+.row {
+  justify-content: center;
+  margin-bottom: 40px;
+
+}
+
+h3, h2 {
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-clear:hover {
+  padding: 17px;
+  color: white;
+  box-shadow: 1px 1px 1px darkgray;
+  text-decoration: none;
+  font-weight: lighter;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+}
