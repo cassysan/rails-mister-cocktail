@@ -4,7 +4,7 @@
       <div class="row drink-title "><h1 id="card-title"><%= @cocktail.name %></h1></div>
       <div class="row large-card-description">
         <div class="column image-large-card">
-          <%= image_tag @cocktail.url, height: 500 %>
+          <%= cl_image_tag @cocktail.photo, height: 500 %>
         </div>
         <div class="large-card-ingredients">
           <% @doses.each do |dose| %>
